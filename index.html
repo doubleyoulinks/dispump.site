@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>DisPump</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.hr {
+color: blue;
+}
+  
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.button {
+  display: inline-block;
+  border-radius: 90px;
+  background-color: #222;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body style="background-color: #111;">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p style="color: blue; font-size: 32pt; padding: 32px;">DisPump</p>
+  <a style="color: grey;" href="home.html">Home</a>
+  <a href="https://github.com/doubleyoulinks/">Github</a>
+  <a href="https://github.com/doubleyoulinks/dispump.game">Play</a>
+  <a href="about.html">About</a>
+</div>
+
+
+<span style="color: white; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; DISPUMP</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+   <center>
+   <br>
+   <br>
+   <span style="font-size: 32pt; color: white;">Welcome To DisPump!</span>
+   <br>
+   <span style="font-size: 12pt; color: white;">The place where messaging is a Game!</span>
+   <br>
+   <br>
+   <br>
+   <br>
+   <hr>
+   <br>
+   <span style="font-size: 22pt; color: white;">Want to Play?</span>
+   <br>
+   <br>
+   <button class="button" style="vertical-align:middle"><span><a href="https://github.com/doubleyoulinks/dispump.game" style="color: white; text-decoration: none;">Click here</a></span></button>
+   </center>
+   
+</body>
+</html> 
